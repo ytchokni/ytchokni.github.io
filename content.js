@@ -5,8 +5,8 @@ const content = {
   affiliation: "DIW Berlin & Free University Berlin",
 
   links: [
-    { label: "CV (PDF)", url: "assets/cv.pdf" },
-    { label: "Email", url: "mailto:ytchokni@diw.de" },
+    { label: "CV", url: "assets/cv.pdf" },
+    { label: "ytchokni@diw.de", url: "mailto:ytchokni@diw.de" },
     { label: "GitHub", url: "https://github.com/ytchokni" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/yogam-tchokni-003a03175/" },
   ],

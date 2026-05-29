@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yogam Tchokni</title>
   <meta name="description" content="Yogam Tchokni — PhD Candidate in Economics at DIW Berlin & Free University Berlin. Research on migration, political economy, development, and inequality.">
+  <meta name="google-site-verification" content="DL354mQsRjng0Ycn_gDFhtAutp6mCJKuXr7S9TOoehQ">
+  <meta name="keywords" content="Yogam Tchokni, economics, migration, political economy, development, inequality, DIW Berlin, Free University Berlin">
+  <meta property="og:title" content="Yogam Tchokni — Economics PhD Candidate">
+  <meta property="og:description" content="Research on migration, political economy, development, and inequality. DIW Berlin & Free University Berlin.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ytchokni.github.io">
+  <meta property="og:image" content="https://ytchokni.github.io/profile.jpg">
+  <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -66,7 +74,7 @@ page.innerHTML = `
   <h2>Work in Progress</h2>
   ${c.workInProgress.map(p => renderPaper(p, false)).join("\n  ")}
 
-  <h2>Software</h2>
+  <h2>Open Source Projects</h2>
   ${c.software.map(p => renderPaper(p, false)).join("\n  ")}
 
   <h2>Contact</h2>
@@ -76,6 +84,16 @@ page.innerHTML = `
     <p style="margin-top:6px"><a href="mailto:${c.contact.email}">${c.contact.email}</a></p>
   </div>
 `;
+
+const photo = document.querySelector('.photo');
+const headerText = document.querySelector('.header-text');
+function sizePhoto() {
+  photo.style.height = headerText.offsetHeight + 'px';
+  photo.style.width = 'auto';
+}
+photo.onload = sizePhoto;
+window.addEventListener('resize', sizePhoto);
+if (photo.complete) sizePhoto();
 </script>
 
 </body>
