@@ -22,10 +22,7 @@
 <script src="content.js"></script>
 <script>
 function renderPaper(p, showPaperLink) {
-  const hasLink = p.paper && p.paper !== "#";
-  const titleHtml = (hasLink || showPaperLink)
-    ? `<a href="${p.paper || '#'}">${p.title}</a>`
-    : p.title;
+  const titleHtml = p.title;
 
   let linksHtml = "";
   if (showPaperLink && p.paper) {
