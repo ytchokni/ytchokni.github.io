@@ -20,11 +20,13 @@ body {
 .header {
   display: flex;
   gap: 28px;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 36px;
 }
 
 .photo {
+  width: 160px;
+  height: 200px;
   flex-shrink: 0;
   object-fit: cover;
   object-position: top;
@@ -50,8 +52,17 @@ body {
   color: #555;
 }
 
+.header-text a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.header-text a:hover {
+  text-decoration: underline;
+}
+
 .header-text .links {
-  margin-top: 10px;
+  margin-top: 6px;
   font-size: 14px;
 }
 

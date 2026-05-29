@@ -58,8 +58,9 @@ page.innerHTML = `
       <h1>${c.name}</h1>
       <p>${c.title}</p>
       <p>${c.affiliation}</p>
+      <p><a href="mailto:${c.contact.email}">${c.contact.email}</a></p>
       <div class="links">
-        ${c.links.map(l => `<a href="${l.url}">${l.label}</a>`).join("\n        ")}
+        ${c.links.filter(l => !l.url.startsWith('mailto:')).map(l => `<a href="${l.url}">${l.label}</a>`).join("\n        ")}
       </div>
       ${c.bio.map(p => `<p class="bio">${p}</p>`).join("\n      ")}
     </div>
@@ -85,15 +86,6 @@ page.innerHTML = `
   </div>
 `;
 
-const photo = document.querySelector('.photo');
-const headerText = document.querySelector('.header-text');
-function sizePhoto() {
-  photo.style.height = headerText.offsetHeight + 'px';
-  photo.style.width = 'auto';
-}
-photo.onload = sizePhoto;
-window.addEventListener('resize', sizePhoto);
-if (photo.complete) sizePhoto();
 </script>
 
 </body>
