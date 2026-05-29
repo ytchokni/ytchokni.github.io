@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogam Tchokni</title>
+  <meta name="description" content="Yogam Tchokni — PhD Candidate in Economics at DIW Berlin & Free University Berlin. Research on migration, political economy, development, and inequality.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page" id="page"></div>
+
+<script src="content.js"></script>
+<script>
+function renderPaper(p, showPaperLink) {
+  const hasLink = p.paper && p.paper !== "#";
+  const titleHtml = (hasLink || showPaperLink)
+    ? `<a href="${p.paper || '#'}">${p.title}</a>`
+    : p.title;
+
+  let linksHtml = "";
+  if (showPaperLink && p.paper) {
+    linksHtml += `<a class="paper-link" href="${p.paper}" style="margin-right:8px">[Paper]</a>`;
+  }
+  if (p.github) {
+    linksHtml += `<a class="paper-link" href="${p.github}">[GitHub]</a>`;
+  }
+
+  const abstractHtml = p.abstract
+    ? `<details><summary>Abstract</summary><div class="abstract-text">${p.abstract}</div></details>`
+    : "";
+
+  return `<div class="paper">
+    <div class="title">${titleHtml}</div>
+    ${p.authors ? `<div class="authors">${p.authors}</div>` : ""}
+    ${p.description ? `<div class="description">${p.description}</div>` : ""}
+    ${linksHtml}
+    ${abstractHtml}
+  </div>`;
+}
+
+const c = content;
+const page = document.getElementById("page");
+
+page.innerHTML = `
+  <div class="header">
+    <img class="photo" src="profile.jpg" alt="Yogam Tchokni">
+    <div class="header-text">
+      <h1>${c.name}</h1>
+      <p>${c.title}</p>
+      <p>${c.affiliation}</p>
+      <div class="links">
+        ${c.links.map(l => `<a href="${l.url}">${l.label}</a>`).join("\n        ")}
+      </div>
+      ${c.bio.map(p => `<p class="bio">${p}</p>`).join("\n      ")}
+    </div>
+  </div>
+
+  <h2>Job Market Paper</h2>
+  ${renderPaper(c.jmp, true)}
+
+  <h2>Working Papers</h2>
+  ${c.workingPapers.map(p => renderPaper(p, true)).join("\n  ")}
+
+  <h2>Work in Progress</h2>
+  ${c.workInProgress.map(p => renderPaper(p, false)).join("\n  ")}
+
+  <h2>Software</h2>
+  ${c.software.map(p => renderPaper(p, false)).join("\n  ")}
+
+  <h2>Contact</h2>
+  <div class="contact-info">
+    <p>${c.contact.institution}</p>
+    <p>${c.contact.address}</p>
+    <p style="margin-top:6px"><a href="mailto:${c.contact.email}">${c.contact.email}</a></p>
+  </div>
+`;
+</script>
+
+</body>
+</html>

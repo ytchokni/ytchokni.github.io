@@ -1,0 +1,6 @@
+.superpowers/
+.playwright-mcp/
+ignore/
+cv/*.aux
+cv/*.log
+cv/*.out
