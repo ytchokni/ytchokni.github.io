@@ -46,7 +46,12 @@ const content = {
     },
   ],
 
-  software: [
+  softwareAndData: [
+    {
+      title: "SOEP-Core v41 (Data 1984–2024)",
+      description: "Co-produced household datasets v38–v41 for the Socio-Economic Panel, a representative multi-cohort survey running since 1984 covering income, employment, education, and health across Germany.",
+      doi: "https://doi.org/10.5684/soep.core.v41o",
+    },
     {
       title: "Econ Newsfeed",
       description: "Full-stack application that monitors economics researchers' personal websites, detects new publications via LLM-powered extraction, and displays them in a chronological newsfeed.",

@@ -29,7 +29,10 @@ function renderPaper(p, showPaperLink) {
     linksHtml += `<a class="paper-link" href="${p.paper}" style="margin-right:8px">[Paper]</a>`;
   }
   if (p.github) {
-    linksHtml += `<a class="paper-link" href="${p.github}">[GitHub]</a>`;
+    linksHtml += `<a class="paper-link" href="${p.github}" style="margin-right:8px">[GitHub]</a>`;
+  }
+  if (p.doi) {
+    linksHtml += `<a class="paper-link" href="${p.doi}" style="margin-right:8px">[DOI]</a>`;
   }
 
   const abstractHtml = p.abstract
@@ -72,8 +75,8 @@ page.innerHTML = `
   <h2>Work in Progress</h2>
   ${c.workInProgress.map(p => renderPaper(p, false)).join("\n  ")}
 
-  <h2>Open Source Projects</h2>
-  ${c.software.map(p => renderPaper(p, false)).join("\n  ")}
+  <h2>Software and Data</h2>
+  ${c.softwareAndData.map(p => renderPaper(p, false)).join("\n  ")}
 
   <h2>Contact</h2>
   <div class="contact-info">
