@@ -19,7 +19,7 @@ const content = {
   jmp: {
     title: "Political Violence and Bureaucratic Discretion: Evidence from German Asylum Decisions",
     authors: "Single-authored",
-    paper: "#",
+    paper: "assets/jmp.pdf",
     abstract: "Democratic accountability typically flows downward: voters pressure politicians, who direct agencies. I test whether policy also responds from below—through the discretionary decisions of the bureaucrats who implement it. I study German asylum decisions, exploiting arson attacks against refugee accommodations as salient signals of anti-immigrant hostility. Unlike out-group-perpetrated violence studied previously, in-group attacks against a vulnerable minority activate competing pressures on decision-makers: compliance with hostile demands versus empathy for victims. Using administrative data on 148,405 applicants (2016–2018), immigration offices exposed to a nearby attack show declining in approval rates, without a change in policy directives. Media-salient attacks produce larger effects and severe attacks show a partial offset consistent with the empathy channel.",
   },
 
