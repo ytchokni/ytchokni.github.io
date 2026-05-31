@@ -27,13 +27,13 @@ const content = {
   workingPapers: [
     {
       title: "Does Information about Legal Migration Pathways Reduce Irregular Migration Aspirations?",
-      authors: "with Tobias Heidland, Bernd Beber, Jens Ruhose, Stefan Leopold, and Mame Mor Anta Syll",
+      authors: 'with <a href="https://www.tobias-heidland.de/">Tobias Heidland</a>, <a href="https://www.sowi.uni-mannheim.de/carey/team/interim-professor/">Bernd Beber</a>, <a href="https://sites.google.com/site/jensruhose/">Jens Ruhose</a>, <a href="https://www.labor.vwl.uni-kiel.de/de/mitarbeiterinnen-und-mitarbeiter/stefan-leopold">Stefan Leopold</a>, and <a href="https://scholar.google.com/citations?user=6RcqENoAAAAJ&hl=en&oi=sra">Mame Mor Anta Syll</a>',
       paper: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353691",
       abstract: "Many high-income countries aim to both increase immigration in line with their labor market needs and decrease irregular arrivals, and some have explicitly promoted efforts to achieve the former as part of a solution to the latter. However, empirical evidence on how information about legal pathways shapes irregular migration intentions as well as self-selection and aspirations for mobility and qualification more broadly remains scant. We contribute new insights with a randomized controlled trial in rural Senegal, providing information and basic assistance on the U.S. Diversity Visa Lottery, which offers medium-and high-skilled migrants access to permanent residence. The intervention significantly increases migration intentions and shifts preferences toward legal pathways. However, currently ineligible individuals, particularly those already contemplating irregular migration, show increased interest in migrating irregularly, suggesting an unintended consequence of efforts to broadly promote legal migration options. Education aspirations only increase weakly from a high baseline. These aspirations already mostly surpass the requirements for pursuing a legal migration path, but participants are unable to realize them.",
     },
     {
       title: "Distributions and Drivers of Lifetime Earnings",
-      authors: "with Carsten Schröder and Mattis Beckmannshagen",
+      authors: 'with <a href="https://sites.google.com/view/carstenschroeder">Carsten Schröder</a> and <a href="https://www.mbeckmannshagen.com/">Mattis Beckmannshagen</a>',
       paper: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6633439",
       abstract: "We link administrative pension records with rich household survey data to study the distribution and drivers of lifetime labor earnings in Germany for birth cohorts from 1935 onward. Unlike previous studies, our data capture the entire workforce, including the self-employed, civil servants, and workers with interrupted careers, revealing that conventional sample restrictions overstate earnings and understate inequality. We document large gender gaps, rising male inequality, and declining female inequality across cohorts. We examine the association between lifetime earnings and a comprehensive set of factors spanning childhood conditions, education, and family formation, uncovering strongly gender-differentiated patterns that accumulate dynamically over the life course yet remain stable across cohorts.",
     },
@@ -42,7 +42,7 @@ const content = {
   workInProgress: [
     {
       title: "Hate Crimes and Social Capital of Immigrants: Evidence from German Club Register Data",
-      authors: "with Max Steinhardt",
+      authors: 'with <a href="https://sites.google.com/site/maxfriedrichsteinhardt">Max Steinhardt</a>',
       abstract: "We introduce a club-based measure of immigrant social capital derived from the near-universe of German registered associations (<em>Vereinsregister</em>) and use it to study how xenophobic violence in post-reunification Germany reshaped Turkish civic organization. The 1993 Solingen arson attack provides a quasi-experiment: municipalities within 30 km of the attack site experienced a sharp, persistent increase in the stock of Turkish-named organizations, concentrated in culturally expressive clubs and attenuating smoothly with distance. DiD estimates reveal the same pattern: municipalities exposed to more xenophobic incidents saw rising stocks of Turkish-named organizations and greater ethnic segregation among new organizational cohorts along the Western/non-Western boundary. The evidence points to civic reorganization along ethnic lines rather than civic withdrawal, consistent with violence raising the returns to co-ethnic association.",
     },
   ],
