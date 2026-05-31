@@ -7,6 +7,7 @@ const content = {
   links: [
     { label: "CV", url: "assets/cv.pdf" },
     { label: "ytchokni@diw.de", url: "mailto:ytchokni@diw.de" },
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=vJC9eakAAAAJ&gmla=AIqSsVvoydip3CRJxaG5y1m3pb7bXAiQg0vIoUcehzV1OQjI_LO4fgmesl4Ve6bQD2UrFqq0TPhmAL-tioA3_roqOxwiVrrtJuUX" },
     { label: "GitHub", url: "https://github.com/ytchokni" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/yogam-tchokni-003a03175/" },
   ],
